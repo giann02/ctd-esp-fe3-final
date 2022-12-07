@@ -1,14 +1,28 @@
 
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
+import Favs from './Routes/Favs';
+import Contact from './Routes/Contact';
+import Detail from './Routes/Detail';
+import Home from './Routes/Home';
+import { ContextProvider } from "./Components/utils/global.context";
+import { Routes, Route } from 'react-router-dom';
+
 
 
 function App() {
   return (
-      <div className="App">
-          <Navbar/>
-          <Footer/>
-      </div>
+        <ContextProvider>
+            <Navbar/>
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route path="/favorites" element={<Favs />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path=":id" element={<Detail />} />
+            </Routes>
+            <Footer/>
+        </ContextProvider>
+      
   );
 }
 
