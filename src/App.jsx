@@ -15,10 +15,10 @@ function App() {
         <ContextProvider>
             <Navbar/>
             <Routes>
-                <Route exact path="/" element={<Home />} />
+                <Route path="/" element={<Home />} />
                 <Route path="/favorites" element={<Favs />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path=":id" element={<Detail />} />
+                <Route path="dentist/:id" element={<Detail />} />
             </Routes>
             <Footer/>
         </ContextProvider>
