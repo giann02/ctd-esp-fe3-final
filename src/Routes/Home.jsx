@@ -9,7 +9,7 @@ const Home = () => {
 
   const [dentists, setDentists] = useState([])
 
-  const { Theme } = useContext(ContextGlobal)
+  const { Theme } = useContext(ContextGlobal);
   const urlDentists = 'https://jsonplaceholder.typicode.com/users'
 
   useEffect(() => {
