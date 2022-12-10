@@ -1,122 +1,191 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
 }
-.favButton{
-  background-color: rgba(136, 136, 136, 0.116);
-  padding: 10px;
-  border: none;
-  width: 100%;
-  cursor: pointer;
+nav div {
+	display: flex;
+	width: 20vw;
+	align-items: center;
+	justify-content: space-around;
 }
-
-h1{
-  text-align: center;
+nav div i {
+    font-size: 2rem;
+    cursor: pointer;
 }
-
-nav{
-  display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+.navbarFont{
+	font-size: 1.5rem;
 }
 
-a{
-  color: #000;
-  text-decoration: none;
-  margin: 5px;
-  cursor: pointer;
-}
-a:hover{
-  color: rgb(136, 136, 136);
-} 
-
+/* Footer */
 footer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-  bottom: 0;
-  width: 90%;
-  height: 40px;
-  margin-top: 2rem;
+	background-color: rgb(176, 25, 25);
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding: 2rem 0;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+}
+footer div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 0.5tem;
+}
+footer div:nth-child(1) img {
+	width: 200px;
+}
+footer div:nth-child(1) p {
+	width: 7vw;
+}
+.iconos{
+	cursor: pointer;
+	width: 2rem;
+	margin-right: 0.5vw;
 }
 
-footer > img{
-  width: 200px;
-  margin: 0;
-}
-footer > p{
-  margin: 0;
-  padding-top: 0.7rem;
-}
 
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 300px;
-  height: 100px;
-  margin: 0 auto;
+.card-grid {
+	display: flex;
+	justify-content: flex-start;
+	gap: 1rem;
+	width: 85.88vw;
+	height: auto;
+	flex-wrap: wrap;
+	margin: 0 auto;
 }
-
-.card{
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
+.card {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	padding: 0.7rem 0.7rem 0.7rem 0.7rem;
+	border: 0.5px solid #cb3234;
 }
-
-.card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+.card:hover {
+	border: 1px solid #c4c4c4;
 }
-
-.card-grid{
-  display: flex;
-  justify-content: space-evenly;
-  gap: 1rem;
-  width: 90vw;
-  height: auto;
-  flex-wrap: wrap;
-  margin: 0 auto;
+.card img {
+	width: 290px;
 }
-
+/* Details */
 table {
- border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    display: table;
-    border: 1px solid #ccc;
-
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	display: table;
+	border: 1px solid #cb3234;
 }
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
 }
-
 tr:nth-child(even) {
-  background-color: #dddddd;
+	background-color: #dddddd;
 }
 
-.dark{
-  background-color: #12121296;
-  color: white;
+
+
+.fa-sun{
+	color: rgb(250, 214, 165)
 }
-.dark > a {
-  color: white;
+
+h1 {
+    text-align: center;
 }
+.favoriteButton {
+	background-color: rgba(183, 116, 116, 0.941);
+	width: 100%;
+	padding: 8px;
+	border: none;
+	cursor: pointer;
+}
+.favoriteButton:hover{
+	background-color:rgba(181, 57, 57, 0.941);
+}
+
+
+a {
+    color: inherit;
+	text-decoration: none;
+	margin: 5px;
+	cursor: pointer;
+}
+a:hover {
+	color: #cb3234;
+}
+
+.home, .contact, .detail, .favs {
+	padding: 2.5rem;
+}
+
+.logos{
+	width: 450px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+
+.buttonRemove {
+	position: relative;
+	top: -20px;
+	align-items: center;
+	background-color:  #cb3234;
+	border: 0;
+	border-radius: 100px;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 14px;
+	font-weight: 700;
+	justify-content: center;
+	line-height: 20px;
+	max-width: 480px;
+	min-height: 40px;
+	min-width: 0px;
+	overflow: hidden;
+	text-align: center;
+	
+	}
+	.buttonRemovehover,
+	.buttonRemove:focus { 
+	background-color: rgb(223, 219, 219);
+	color: #ffffff;
+}
+
+	.buttonRemove:active {
+	background: rgb(223, 219, 219);
+	color: rgb(255, 255, 255, .7);
+	}
+
+	.buttonRemove:disabled { 
+	cursor: not-allowed;
+	background: rgba(0, 0, 0, .08);
+	color: rgba(0, 0, 0, .3);
+	}
