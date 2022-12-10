@@ -26,7 +26,6 @@ const Favs = () => {
       <h1>Dentists Favs</h1>
       <button className="buttonRemove" onClick={handleClearFavs}>REMOVE ALL DENTIST</button>
       <div className="card-grid">
-        {console.log(dentistFavourite)}
         {dentistFavourite?.map(info => <Card key={info.id} name={info.name} username={info.username} id={info.id}/>)}
       </div>
     </div>
