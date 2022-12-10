@@ -8,8 +8,8 @@ const Footer = () => {
   return (
 <footer style={{background:Theme.backgroundFooter, color:Theme.color}}>
             <div>
-                <p>Powered by</p>
-                <h4>Gian Panigatti</h4>
+                <p style={{color: "grey"}}>Powered by</p>
+                <h3 style={{color: "grey"}}>Gian Panigatti</h3>
             </div>
             <div>
               <img className='iconos' src="/images/ico-facebook.png" alt="facebookIcon" />
