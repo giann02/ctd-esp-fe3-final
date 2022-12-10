@@ -4,13 +4,13 @@ import { useEffect, useState, useContext } from 'react'
 import Card from '../Components/Card'
 import { ContextGlobal } from '../Components/utils/global.context'
 
+export const urlDentists = 'https://jsonplaceholder.typicode.com/users'
 
 const Home = () => {
 
   const [dentists, setDentists] = useState([])
 
   const { Theme } = useContext(ContextGlobal);
-  const urlDentists = 'https://jsonplaceholder.typicode.com/users'
 
   useEffect(() => {
     axios.get(urlDentists)
